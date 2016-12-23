@@ -1,6 +1,8 @@
-# AS3COMs
+# AS3-ANE-COMs
 This is COMs ANE for RS232, it's by Hanleon.
+
 This ANE includ some functions, there are COM_Open(); COM_Close(); COM_Read() and COM_Write().
+
 Also this ANE can connect more coms that using one ane.
 
 -----------------------------------------------------------------------------
