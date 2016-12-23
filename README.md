@@ -6,13 +6,13 @@ Also this ANE can connect more coms that using one ane.
 -----------------------------------------------------------------------------
 If connect single com, pleaase follow this code:
 
-import com.hanleon.COMs;
-var ane: COMs = new COMs;
-ane.COM_Open(3,9600);
-stage.addEventListener(Event.ENTER_FRAME, _onEF);
+import com.hanleon.COMs
+var ane: COMs = new COMs
+ane.COM_Open(3,9600)
+stage.addEventListener(Event.ENTER_FRAME, _onEF)
 function _onEF(e: Event)
 {
-	trace(ane.COM_Read(3));
+	trace(ane.COM_Read(3))
 }
 stage.addEventListener(MouseEvent.CLICK, _onCLICK)
 function _onCLICK(e: MouseEvent)
