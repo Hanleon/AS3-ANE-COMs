@@ -6,18 +6,18 @@ Also this ANE can connect more coms that using one ane.
 -----------------------------------------------------------------------------
 If connect single com, pleaase follow this code:
 
-import com.hanleon.COMs
-var ane: COMs = new COMs
-ane.COM_Open(3,9600)
-stage.addEventListener(Event.ENTER_FRAME, _onEF)
+import com.hanleon.COMs;
+var ane: COMs = new COMs;
+ane.COM_Open(3,9600);
+stage.addEventListener(Event.ENTER_FRAME, _onEF);
 function _onEF(e: Event)
 {
-	trace(ane.COM_Read(3))
+	trace(ane.COM_Read(3));
 }
-stage.addEventListener(MouseEvent.CLICK, _onCLICK)
+stage.addEventListener(MouseEvent.CLICK, _onCLICK);
 function _onCLICK(e: MouseEvent)
 {
-	ane.COM_Write(3, "test123")
+	ane.COM_Write(3, "test123");
 }
 
 -----------------------------------------------------------------------------
@@ -31,15 +31,15 @@ stage.addEventListener(Event.ENTER_FRAME, _onEF);
 function _onEF(e: Event)
 {
 	trace(ane.COM_Read(3));
-  trace(ane.COM_Read(4));
+  	trace(ane.COM_Read(4));
 }
-btn1.addEventListener(MouseEvent.CLICK, _onCLICK)
+btn1.addEventListener(MouseEvent.CLICK, _onCLICK);
 function _onCLICK(e: MouseEvent)
 {
-	ane.COM_Write(3, "test123")
+	ane.COM_Write(3, "test123");
 }
-btn2.addEventListener(MouseEvent.CLICK, _onCLICK)
-function _onCLICK(e: MouseEvent)
+btn2.addEventListener(MouseEvent.CLICK, _onCLICK2);
+function _onCLICK2(e: MouseEvent)
 {
-	ane.COM_Write(4, "abc123")
+	ane.COM_Write(4, "abc123");
 }
