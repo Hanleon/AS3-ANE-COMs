@@ -2,11 +2,13 @@
 This is COMs ANE for RS232, it's by Hanleon.
 This ANE includ some functions, there are COM_Open(); COM_Close(); COM_Read() and COM_Write().
 Also this ANE can connect more coms that using one ane.
+You can only install the "COMs.exe" to test, or open the "COMs.fla" to program.
 
 -----------------------------------------------------------------------------
 If connect single com, pleaase follow this code:
 
 import com.hanleon.COMs;
+
 var ane: COMs = new COMs;
 ane.COM_Open(3,9600);
 stage.addEventListener(Event.ENTER_FRAME, _onEF);
