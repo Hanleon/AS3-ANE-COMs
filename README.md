@@ -8,7 +8,6 @@ You can only install the "COMs.exe" to test, or open the "COMs.fla" to program.
 If connect single com, pleaase follow this code:
 
 import com.hanleon.COMs;
-
 var ane: COMs = new COMs;
 ane.COM_Open(3,9600);
 stage.addEventListener(Event.ENTER_FRAME, _onEF);
