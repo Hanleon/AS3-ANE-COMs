@@ -31,7 +31,7 @@ function _onEF(e: Event)
 
 {
 	
-	trace(ane.COM_Read(3));
+trace(ane.COM_Read(3));
 
 }
 
@@ -43,7 +43,7 @@ function _onCLICK(e: MouseEvent)
 
 {
 	
-	ane.COM_Write(3, "test123");
+ane.COM_Write(3, "test123");
 
 }
 
@@ -74,7 +74,7 @@ function _onEF(e: Event)
 
 {
 	
-	trace(ane.COM_Read(3));
+trace(ane.COM_Read(3));
 
 	
 trace(ane.COM_Read(4));
@@ -89,7 +89,7 @@ function _onCLICK(e: MouseEvent)
 
 {
 	
-	ane.COM_Write(3, "test123");
+ane.COM_Write(3, "test123");
 
 }
 
@@ -101,6 +101,6 @@ function _onCLICK2(e: MouseEvent)
 
 {
 	
-	ane.COM_Write(4, "abc123");
+ane.COM_Write(4, "abc123");
 
 }
